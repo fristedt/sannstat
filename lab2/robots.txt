@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /math/student/courses/5B1127/bebbe/
