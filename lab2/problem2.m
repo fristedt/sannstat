@@ -1,11 +1,11 @@
 %% Problem 2: Konfidensintervall
 load wave_data.mat
-subplot(211), plot(y(1:100))
+subplot(211), plot(y(1:end))
 subplot(212), hist_density(y)
 % my_est = sqrt(1/(2*length(y))*sum(y.^2)) % ML
 my_est = mean(y)/sqrt(pi/2) % MK
 % 95%
-n = length(y);
+n = length(y)
 s = sqrt(sum((y - mean(y)).^2)/(n-1));
 d = s/sqrt(n);
 lower_bound = my_est - 1.96*d
